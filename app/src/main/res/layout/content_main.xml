@@ -1,0 +1,18 @@
+<!-- In this app, you’ll provide two content_main.xml layouts to be included into MainActivity—one for phone-sized devices and one for tablet-sized devices.
+For the phone layout, we used below code. MainActivity dynamically displays the app’s Fragments in the FrameLayout named fragmentContainer.
+TODO: NOTE: I was mistsakenly using "Fragment" instead of FrameLayout, therefore, I was getting a strange error, which was when I clicked on Add contact button, the add button was always visible on all fragments.
+It was because I was using hardcoded Fragment, which is only used in "content_main (Large)" for fragment_contacts only which is always visible. Unlike other fragments which we use program to add to FrameLayout.-->
+
+<FrameLayout
+    android:id = "@+id/fragmentContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity" />

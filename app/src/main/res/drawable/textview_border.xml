@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is a custom layout for textView's for a style defined in Styles.xml
+style name="ContactTextView"
+This style is used in fragment_detail.xml textView's
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle">
+   <corners android:radius="5dp"/>
+   <stroke
+      android:width="1dp"
+      android:color="#555"/>
+   <padding
+      android:bottom="10dp"
+      android:left="10dp"
+      android:right="10dp"
+      android:top="10dp"/>
+</shape>
