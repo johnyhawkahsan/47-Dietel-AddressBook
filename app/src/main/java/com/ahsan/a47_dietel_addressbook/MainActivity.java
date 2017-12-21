@@ -140,6 +140,8 @@ public class MainActivity extends AppCompatActivity
     // update GUI after new contact or updated contact saved
     @Override
     public void onAddEditCompleted(Uri contactUri) {
+        Log.i("MainActivity", "Uri received from AddEditFragment, contactUri: " + contactUri);
+
         // removes top of back stack
         getSupportFragmentManager().popBackStack();
         contactsFragment.updateContactList();// refresh contacts

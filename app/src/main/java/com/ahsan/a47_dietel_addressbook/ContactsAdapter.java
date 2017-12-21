@@ -2,9 +2,6 @@
 
 package com.ahsan.a47_dietel_addressbook;
 
-/**
- * Created by ahsan on 10/28/2017.
- */
 
 import android.database.Cursor;
 import android.net.Uri;

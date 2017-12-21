@@ -18,6 +18,7 @@ import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -165,6 +166,8 @@ public class AddEditFragment extends Fragment implements LoaderManager.LoaderCal
         if (addingNewContact){
             // use Activity's ContentResolver to invoke insert on the AddressBookContentProvider
             Uri newContactUri = getActivity().getContentResolver().insert(Contact.CONTENT_URI, contentValues);
+
+            Log.i("AddEditFragment", "newContactUri : " + newContactUri);
 
             //If the insert is successful, the returned Uri is non-null
             if (newContactUri != null){
