@@ -104,7 +104,7 @@ public class DetailFragment extends Fragment implements LoaderManager.LoaderCall
         switch (item.getItemId()){
 
             case R.id.action_edit:
-                listener.onEditContact(contactUri); //  calls the DetailFragmentListener’s onEditContact method with the contactUri—MainActivity passes this to the AddEditFragment.
+                listener.onEditContact(contactUri); // calls the DetailFragmentListener’s onEditContact method with the contactUri—MainActivity passes this to the AddEditFragment.
                 return true;
 
             case R.id.action_delete:
